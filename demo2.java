@@ -3,6 +3,8 @@ public class demo2{
     {
         Student s1= new Student();
         Student s2= new Student();
+        // basically Student(); is a contructor if we are not defining it then it store the default value zero otherwise what ever values that we are
+        //giving it to it.
 
         s1.name="arkit";
         s1.roll=1;
@@ -28,6 +30,28 @@ class Student{
     int roll;
     int age;
     String Collegename;
+    // creating the constructor for the same.
+    // this is methord overloading as well as we are adding more  and more values to the variablles for the same.
+    Student()
+    {
+        name="arkit";
+        roll=1;
+        age=22;
+        Collegename="aktu";
+    }
+    // this is the contrcutiing channning
+    Student(String name , String Collegename)
+    {
+       this(0,name, 0, Collegename);
+    }
+
+    Student(int roll, String name , int age , String Collegename)
+    {
+        this.name=name;
+        this.roll=roll;
+        this.age=age;
+        this.Collegename=Collegename;
+    }
 
     void markattendence(){
         System.out.println("attendennce is marked by "+ name);
