@@ -18,11 +18,21 @@ public class demo2{
       
         s1.markattendence();
         s1.print();
-        s2.print();
+        s2.print(); 
+        int x = 5;
+        int y=7; 
+        addten(x, y);// call by value 
+
 
      
     }
 
+}
+// call by value 
+static void addten(int x , int y)
+{
+    x=x+10;
+    y=y+10;
 }
 
 class Student{
