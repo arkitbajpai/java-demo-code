@@ -34,6 +34,23 @@ static void addten(int x , int y)
     x=x+10;
     y=y+10;
 }
+static void addten1(Random r )
+{
+    r.x=r.x+10;
+    r.x=r.y+10;
+}
+// this is for call by refernece;
+class Random{
+    int x; 
+    int y;
+
+    Random(int x , int y)
+    {this.x=x;
+        this.y=y;
+
+    }
+
+}
 
 class Student{
     String name;
