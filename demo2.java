@@ -14,7 +14,7 @@ public class demo2{
          s2.name="arkit1";
         s2.roll=3;
         s2.age=22;
-        s2.Collegename="akt";
+        s2.Collegename="aktu";
       
         s1.markattendence();
         s1.print();
